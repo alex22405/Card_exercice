@@ -1,0 +1,177 @@
+*{
+    /* margin: 0; */
+    box-sizing: border-box;
+}
+:root
+{
+    --red: #f55;
+    --yellow: #ffb21e;
+    --green: #00BB8F;
+
+}
+body
+{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+article
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.box1
+{
+    width: 260px;
+    height: 360px;
+    border-radius: 5%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    position: relative;
+    left: 10px;
+}
+.circle
+{
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.score
+{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+.percent
+{
+    font-size: small;
+    text-align: center;
+    color: white;
+    opacity: 0.4;
+}
+.opacity
+{
+    opacity: 0.7;
+    color: white;
+}
+.result
+{
+    font-size: 25px;
+    color: white;
+}
+.text
+{
+    text-align: center;
+    font-size: small;
+    width: 70%;
+}
+
+.box2
+{
+    width: 260px;
+    height: 360px;
+    box-shadow: 0 0 20px grey;
+    border-radius: 0 5% 5% 0;
+}
+.box2 p
+{
+    padding-left: 10%;
+}
+.groupe
+{
+    display: grid;
+    gap: 10px;
+}
+.sommaire1, .sommaire2, .sommaire3, .sommaire4
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+}
+.sommaire1
+{
+    background-color: hsla(0, 100%, 67%, 10%);
+}
+.sommaire2
+{
+    background-color: hsla(39, 100%, 56%, 10%);
+}
+.sommaire3
+{
+    background-color: hsla(166, 100%, 37%, 10%);
+}
+.sommaire4
+{
+    background-color: hsla(234, 85%, 45%, 10%);
+}
+.red
+{
+    color: hsl(0, 100%, 67%);
+    padding-right: 20%;
+}
+.yellow
+{
+    color: hsl(39, 100%, 56%);
+    padding-right: 20%;
+}
+.green
+{
+    color: hsl(166, 100%, 37%);
+    padding-right: 20%;
+}
+.blue
+{
+    color: hsl(234, 85%, 45%);
+    padding-right: 20%;
+}
+.btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 40px;
+    margin: 12%;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 50px;
+    font-size: small;
+}
+.btn:hover
+{
+    cursor: pointer;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.pourcent
+{
+    opacity: 40%;
+}
+@media screen and (max-width:576px)
+{
+    .container
+    {
+        display: grid;
+    }
+    .box1
+    {
+        border-radius: 0 0 10% 10% ;
+        /* position: initial;
+        transform: translateY(15px); */
+        left: 0;
+        top: 15px;
+    }
+    .box2
+    {
+        border-radius: 0;
+    }
+}
