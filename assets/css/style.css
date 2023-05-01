@@ -7,7 +7,6 @@
     --red: #f55;
     --yellow: #ffb21e;
     --green: #00BB8F;
-
 }
 body
 {
@@ -93,55 +92,27 @@ article
     border-radius: 10px;
 }
 
-
 .sommaire1
 {
     background-color: hsla(0, 100%, 67%, 10%);
+    color: var(--red);
 }
 .sommaire2
 {
     background-color: hsla(39, 100%, 56%, 10%);
+    color: var(--yellow);
 }
 .sommaire3
 {
     background-color: hsla(166, 100%, 37%, 10%);
+    color: var(--green);
 }
 
-.sommaire1:hover
+.sommaire1:hover, .sommaire2:hover, .sommaire3:hover
 {
     border: 1px solid gold;
 }
 
-.sommaire2:hover
-{
-    border: 1px solid gold;
-}
-
-.sommaire3:hover
-{
-    border: 1px solid gold;
-}
-
-.red
-{
-    color: hsl(0, 100%, 67%);
-    padding-right: 20%;
-}
-.yellow
-{
-    color: hsl(39, 100%, 56%);
-    padding-right: 20%;
-}
-.green
-{
-    color: hsl(166, 100%, 37%);
-    padding-right: 20%;
-}
-.blue
-{
-    color: hsl(234, 85%, 45%);
-    padding-right: 20%;
-}
 .btn
 {
     display: flex;
