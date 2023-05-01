@@ -43,30 +43,24 @@ article
     height: 140px;
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
-.score
+.balance
 {
     color: white;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 800;
 }
-.percent
-{
-    font-size: small;
-    text-align: center;
-    color: white;
-    opacity: 0.4;
-}
+
 .opacity
 {
     opacity: 0.7;
     color: white;
 }
-.result
+.fullname
 {
     font-size: 25px;
     color: white;
 }
-.text
+.comment
 {
     text-align: center;
     font-size: small;
@@ -87,17 +81,19 @@ article
 .groupe
 {
     display: grid;
-    gap: 10px;
+    gap: 20px;
 }
-.sommaire1, .sommaire2, .sommaire3, .sommaire4
+.sommaire1, .sommaire2, .sommaire3
 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 80%;
-    height: 45px;
+    height: 3em;
     border-radius: 10px;
 }
+
+
 .sommaire1
 {
     background-color: hsla(0, 100%, 67%, 10%);
@@ -110,10 +106,22 @@ article
 {
     background-color: hsla(166, 100%, 37%, 10%);
 }
-.sommaire4
+
+.sommaire1:hover
 {
-    background-color: hsla(234, 85%, 45%, 10%);
+    border: 1px solid gold;
 }
+
+.sommaire2:hover
+{
+    border: 1px solid gold;
+}
+
+.sommaire3:hover
+{
+    border: 1px solid gold;
+}
+
 .red
 {
     color: hsl(0, 100%, 67%);
@@ -147,15 +155,18 @@ article
     border-radius: 50px;
     font-size: small;
 }
+
+.icon
+{
+    width: 30px;
+}
+
 .btn:hover
 {
     cursor: pointer;
-    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background: linear-gradient(to right, #1d976c, #93f9b9);
 }
-.pourcent
-{
-    opacity: 40%;
-}
+
 @media screen and (max-width:576px)
 {
     .container
